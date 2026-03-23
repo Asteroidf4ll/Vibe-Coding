@@ -51,7 +51,7 @@ git push -u origin master
 ### 4. 访问你的主页
 等待 1-2 分钟后，访问：
 ```
-https://yourusername.github.io
+[https://yourusername.github.io](https://asteroidf4ll.github.io/Vibe-Coding/)
 ```
 
 ## 📁 文件结构
