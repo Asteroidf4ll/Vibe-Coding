@@ -1,6 +1,27 @@
-# 个人主页 | Personal Homepage
+# Vibe Coding 项目集合 | Project Portfolio
 
-这是一个使用 HTML/CSS 构建的简洁个人主页，通过 GitHub Pages 部署。
+包含两个 GitHub Pages 部署项目：个人主页和待办事项应用。
+
+---
+
+## 📱 项目一：个人主页
+
+简洁现代的个人介绍页面。
+
+**访问**：`https://asteroidf4ll.github.io/Vibe-Coding/`
+
+---
+
+## ✅ 项目二：待办事项应用 (Todo App)
+
+功能完整的任务管理应用，支持：
+- ✨ 添加/删除任务
+- ✓ 标记完成状态
+- 🔍 筛选查看（全部/待完成/已完成）
+- 💾 本地存储（数据持久化）
+- 📊 任务统计
+
+**访问**：`https://asteroidf4ll.github.io/Vibe-Coding/todo/`
 
 ## 🚀 部署步骤
 
