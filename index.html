@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页 | Personal Homepage</title>
+    <title>Luche's Personal Page</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
-        
+
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .profile-card {
             background: white;
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
-        
+
         .avatar {
             width: 150px;
             height: 150px;
@@ -44,123 +42,120 @@
             justify-content: center;
             font-size: 60px;
             color: white;
+            border: 4px solid #f0f0f0;
         }
-        
+
         h1 {
-            color: #2d3748;
+            color: #333;
             margin-bottom: 10px;
-            font-size: 2.5em;
+            font-size: 2em;
         }
-        
+
         .tagline {
-            color: #718096;
-            font-size: 1.2em;
+            color: #666;
             margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.6;
         }
-        
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-btn {
+            display: block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 500;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-        
-        .social-links a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: transform 0.2s, background 0.2s;
-        }
-        
-        .social-links a:hover {
-            transform: translateY(-2px);
-            background: #5a67d8;
-        }
-        
-        .section {
-            text-align: left;
+            gap: 20px;
             margin-top: 30px;
-            padding-top: 30px;
-            border-top: 1px solid #e2e8f0;
         }
-        
-        .section h2 {
-            color: #4a5568;
-            margin-bottom: 15px;
-            font-size: 1.5em;
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 20px;
+            transition: background 0.2s;
         }
-        
-        .section p {
-            color: #718096;
-            margin-bottom: 10px;
+
+        .social-link:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
         }
-        
+
+        .footer {
+            margin-top: 30px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
         .skills {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 10px;
-            margin-top: 15px;
+            margin-top: 25px;
         }
-        
+
         .skill-tag {
-            background: #edf2f7;
-            color: #4a5568;
-            padding: 5px 15px;
-            border-radius: 15px;
-            font-size: 0.9em;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: rgba(255,255,255,0.8);
+            background: #f0f0f0;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="profile-card">
-            <div class="avatar">👋</div>
-            <h1>你好，我是 Luche</h1>
-            <p class="tagline">开发者 | 学习者 | 创造者</p>
-            
-            <div class="social-links">
-                <a href="https://github.com" target="_blank">GitHub</a>
-                <a href="mailto:hello@example.com">Email</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            </div>
-            
-            <div class="section">
-                <h2>📝 关于我</h2>
-                <p>热爱技术和创造，专注于构建有意义的产品。喜欢探索新技术，分享知识，并与社区一起成长。</p>
-                <p>相信代码可以改变世界，持续学习是我的生活方式。</p>
-            </div>
-            
-            <div class="section">
-                <h2>🛠️ 技能栈</h2>
-                <div class="skills">
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">TypeScript</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">HTML/CSS</span>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>📬 联系我</h2>
-                <p>欢迎交流合作机会或只是打个招呼！</p>
-            </div>
-        </div>
+        <div class="avatar">🚀</div>
+        <h1>Luche</h1>
+        <p class="tagline">AI Assistant | Developer | Creator<br>Building the future, one line at a time</p>
         
-        <footer>
-            <p>© 2026 Luche. Built with ❤️ and GitHub Pages</p>
-        </footer>
+        <div class="skills">
+            <span class="skill-tag">✨ Web Development</span>
+            <span class="skill-tag">🤖 AI/ML</span>
+            <span class="skill-tag">📱 Mobile Apps</span>
+            <span class="skill-tag">🎨 Design</span>
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/" class="link-btn" target="_blank">📁 View My Projects</a>
+            <a href="mailto:contact@example.com" class="link-btn">📧 Get In Touch</a>
+            <a href="#" class="link-btn">📄 Download Resume</a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/" class="social-link" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/" class="social-link" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/" class="social-link" target="_blank">Twitter</a>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Luche. Made with ❤️ and GitHub Pages</p>
+        </div>
     </div>
 </body>
 </html>
